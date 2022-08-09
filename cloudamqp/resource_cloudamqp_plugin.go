@@ -35,6 +35,11 @@ func resourcePlugin() *schema.Resource {
 				Required:    true,
 				Description: "If the plugin is enabled",
 			},
+			"description": {
+				Type:        schema.TypeString,
+				Computed:    true,
+				Description: "The description of the plugin",
+			},
 		},
 	}
 }
